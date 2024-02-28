@@ -13,7 +13,7 @@
 1.1.b. Aký je názov hľadaného kódovaného génu ? (Názov nájdete v rámci "GENE" na začiatku vyhľadávania). Ako sa tento gén nazýva pri hľadaní u človeka ("INS homo sapiens") a aké sú jeho iné kódovania ?
 -preproinsulin
 -insulin (homo sapiens)
--insulin II (mus musculus)
+- IDDM IDDM1
 
 1.1.c. Vo vyhľadávaní pre gén "INS tunicates" vyberte sekvenciu mRNA pre organizmus Ciona intestinalis (Sumka trubičkovitá). Napíšte jej taxonomické zaradenie (nájdete v ORGANISM)
 -[Eukaryota](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=2759&lvl=3&keep=1&srchmode=1&unlock "superkingdom"); [Metazoa](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=33208&lvl=3&keep=1&srchmode=1&unlock "kingdom"); [Chordata](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=7711&lvl=3&keep=1&srchmode=1&unlock "phylum"); [Tunicata](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=7712&lvl=3&keep=1&srchmode=1&unlock "subphylum"); [Ascidiacea](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=7713&lvl=3&keep=1&srchmode=1&unlock "class"); [Phlebobranchia](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=7716&lvl=3&keep=1&srchmode=1&unlock "order"); [Cionidae](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=7717&lvl=3&keep=1&srchmode=1&unlock "family"); [Ciona](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=7718&lvl=3&keep=1&srchmode=1&unlock "genus")
