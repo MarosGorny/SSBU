@@ -1,9 +1,13 @@
 from sklearn.linear_model import LogisticRegression
 from sklearn import svm
 
-from machine_learning.data_handling import Dataset
-from machine_learning.experiment import Experiment
-from machine_learning.result_plots import Plotter
+import sys
+sys.path.insert(0, 'D:/School/Ing/2. Semester/SSBU/SSBULinda/SSBU/t8_cv7/machine_learning/machine_learning')
+
+from data_handling import Dataset
+from result_plots import Plotter
+from experiment import Experiment
+
 
 
 def main():
