@@ -1,4 +1,5 @@
 from sklearn.linear_model import LogisticRegression
+from sklearn import svm
 
 from machine_learning.data_handling import Dataset
 from machine_learning.experiment import Experiment
@@ -15,15 +16,22 @@ def main():
     # Initialize dataset and preprocess the data
     dataset = Dataset()
 
+    
+
     # Define models to be trained
     models = {
         "Logistic Regression": LogisticRegression(solver='liblinear'),  # Solver specified for clarity
+
     }
 
     # Define hyperparameter grids for tuning
     param_grids = {
         "Logistic Regression": {"C": [0.1, 1, 10], "max_iter": [10000]},
     }
+
+    # Add Support Vector Machine model and hyperparameter grid
+    models["SVM"] = svm.SVC()
+    param_grids["SVM"] = {'C': [0.1, 1, 10], 'gamma': [0.1, 1, 'scale']}
 
     experiment = Experiment(models, param_grids, n_replications=10)
     results = experiment.run(dataset.data, dataset.target)
@@ -35,6 +43,9 @@ def main():
         experiment.results.groupby('model')['accuracy'].apply(list).to_dict(),
         'Accuracy per Replication and Average Accuracy', 'Accuracy')
     plotter.plot_confusion_matrices(experiment.mean_conf_matrices)
+    plotter.plot_precision_over_replications(
+        experiment.results.groupby('model')['precision'].apply(list).to_dict(),
+        'Precision per Replication and Average Precision', 'Precision')
     plotter.print_best_parameters(results)
 
 

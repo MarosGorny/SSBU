@@ -76,7 +76,7 @@ class Experiment:
         # Append the confusion matrix to the list for this model
         self.replication_conf_matrices[model_name].append(confusion_matrix(y_test, predictions))
 
-    def store_results(self, model_name, replication, accuracy, f1, roc_auc, best_params):
+    def store_results(self, model_name, replication, accuracy, f1, roc_auc, precision, best_params):
         """Store the results of a single evaluation."""
         new_row = pd.DataFrame({
             'model': model_name,
@@ -84,12 +84,13 @@ class Experiment:
             'accuracy': accuracy,
             'f1_score': f1,
             'roc_auc': roc_auc,
+            'precision': precision,
             'best_params': [best_params]
         })
         self.results = pd.concat([self.results, new_row], ignore_index=True)
         logging.info(
             f"{model_name}, Replication: {replication}, Accuracy: {accuracy:.4f}, F1: {f1:.4f}, "
-            f"ROC AUC: {roc_auc:.4f},  Params: {best_params}")
+            f"ROC AUC: {roc_auc:.4f}, Precision: {precision:.4f}, Params: {best_params}")
 
     def calculate_mean_conf_matrices(self):
         """Calculate the mean confusion matrix for each model."""

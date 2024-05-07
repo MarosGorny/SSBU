@@ -1,5 +1,6 @@
 from sklearn.metrics import accuracy_score, f1_score, roc_auc_score
 from sklearn.model_selection import GridSearchCV
+from sklearn.metrics import precision_score
 
 
 # Define a class for training and evaluating models
@@ -40,6 +41,7 @@ class ModelTrainer:
         - accuracy: float, accuracy of the model on the test data.
         - f1: float, F1 score of the model on the test data.
         - roc_auc: float, ROC AUC of the model on the test data.
+        - precision: float, precision score of the model on the test data.        
         - predictions: array, predicted labels for the test data.
         """
         predictions = self.model.predict(X_test)
@@ -48,7 +50,9 @@ class ModelTrainer:
         accuracy = accuracy_score(y_test, predictions)
         f1 = f1_score(y_test, predictions)
         roc_auc = roc_auc_score(y_test, prob_predictions)
-        return accuracy, f1, roc_auc, predictions
+
+        precision = precision_score(y_test, predictions)  # Calculate precision
+        return accuracy, f1, roc_auc, precision, predictions
 
 
 # Define a class for optimizing model hyperparameters
