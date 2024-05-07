@@ -9,7 +9,7 @@ from data_handling import DataScaler
 from model_wrappers import ModelOptimizer, ModelTrainer
 
 # Set up logging to record model accuracies in a CSV file
-logging.basicConfig(filename='../outputs/model_accuracies.csv', filemode='w',  level=logging.INFO, format='%(asctime)s, %(message)s')
+logging.basicConfig(filename='D:/School/Ing/2. Semester/SSBU/SSBULinda/SSBU/t8_cv7/machine_learning/outputs/model_accuracies.csv', filemode='w',  level=logging.INFO, format='%(asctime)s, %(message)s')
 
 class Experiment:
     """A class to handle the entire experiment of training and evaluating models."""
@@ -63,16 +63,16 @@ class Experiment:
         trainer = ModelTrainer(self.models[model_name], best_params)
 
         # Split the resampled data into training and test sets
-        X_train, X_test, y_train, y_test = train_test_split(X_resampled, y_resampled, test_size=0.4,)
+        X_train, X_test, y_train, y_test = train_test_split(X_resampled, y_resampled, test_size=0.4)
 
         # Scale the data using the DataScaler class
         X_train, X_test = datascaler.scale_data(X_train, X_test)
 
         # Train and evaluate the model
         trainer.train(X_train, y_train)
-        accuracy, f1, roc_auc, predictions = trainer.evaluate(X_test, y_test)
+        accuracy, f1, roc_auc, precision, predictions = trainer.evaluate(X_test, y_test)
 
-        self.store_results(model_name, replication, accuracy, f1, roc_auc, best_params)
+        self.store_results(model_name, replication, accuracy, f1, roc_auc, precision, best_params)
         # Append the confusion matrix to the list for this model
         self.replication_conf_matrices[model_name].append(confusion_matrix(y_test, predictions))
 

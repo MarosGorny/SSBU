@@ -1,0 +1,20 @@
+2024-05-07 22:27:41,047, Logistic Regression, Replication: 0, Accuracy: 0.9720, F1: 0.9699, ROC AUC: 0.9924, Precision: 0.9627, Params: {'C': 10, 'max_iter': 10000}
+2024-05-07 22:27:41,454, SVM, Replication: 0, Accuracy: 0.9860, F1: 0.9859, ROC AUC: 0.5000, Precision: 0.9790, Params: {'C': 10, 'gamma': 'scale'}
+2024-05-07 22:27:41,526, Logistic Regression, Replication: 1, Accuracy: 0.9790, F1: 0.9771, ROC AUC: 0.9986, Precision: 0.9771, Params: {'C': 10, 'max_iter': 10000}
+2024-05-07 22:27:41,918, SVM, Replication: 1, Accuracy: 0.9685, F1: 0.9677, ROC AUC: 0.5000, Precision: 0.9574, Params: {'C': 10, 'gamma': 'scale'}
+2024-05-07 22:27:41,974, Logistic Regression, Replication: 2, Accuracy: 0.9720, F1: 0.9732, ROC AUC: 0.9977, Precision: 0.9732, Params: {'C': 10, 'max_iter': 10000}
+2024-05-07 22:27:42,364, SVM, Replication: 2, Accuracy: 0.9895, F1: 0.9888, ROC AUC: 0.5000, Precision: 0.9925, Params: {'C': 10, 'gamma': 'scale'}
+2024-05-07 22:27:42,442, Logistic Regression, Replication: 3, Accuracy: 0.9720, F1: 0.9730, ROC AUC: 0.9932, Precision: 0.9796, Params: {'C': 10, 'max_iter': 10000}
+2024-05-07 22:27:42,814, SVM, Replication: 3, Accuracy: 0.9755, F1: 0.9744, ROC AUC: 0.5000, Precision: 0.9500, Params: {'C': 10, 'gamma': 'scale'}
+2024-05-07 22:27:42,878, Logistic Regression, Replication: 4, Accuracy: 0.9685, F1: 0.9680, ROC AUC: 0.9908, Precision: 0.9577, Params: {'C': 10, 'max_iter': 10000}
+2024-05-07 22:27:43,305, SVM, Replication: 4, Accuracy: 0.9650, F1: 0.9655, ROC AUC: 0.5000, Precision: 0.9655, Params: {'C': 10, 'gamma': 'scale'}
+2024-05-07 22:27:43,387, Logistic Regression, Replication: 5, Accuracy: 0.9720, F1: 0.9730, ROC AUC: 0.9905, Precision: 0.9536, Params: {'C': 10, 'max_iter': 10000}
+2024-05-07 22:27:43,823, SVM, Replication: 5, Accuracy: 0.9825, F1: 0.9825, ROC AUC: 0.5000, Precision: 0.9859, Params: {'C': 10, 'gamma': 'scale'}
+2024-05-07 22:27:43,917, Logistic Regression, Replication: 6, Accuracy: 0.9720, F1: 0.9710, ROC AUC: 0.9936, Precision: 0.9781, Params: {'C': 10, 'max_iter': 10000}
+2024-05-07 22:27:44,422, SVM, Replication: 6, Accuracy: 0.9545, F1: 0.9541, ROC AUC: 0.5000, Precision: 0.9854, Params: {'C': 10, 'gamma': 'scale'}
+2024-05-07 22:27:44,517, Logistic Regression, Replication: 7, Accuracy: 0.9580, F1: 0.9549, ROC AUC: 0.9942, Precision: 0.9407, Params: {'C': 1, 'max_iter': 10000}
+2024-05-07 22:27:44,967, SVM, Replication: 7, Accuracy: 0.9895, F1: 0.9892, ROC AUC: 0.5000, Precision: 0.9857, Params: {'C': 10, 'gamma': 'scale'}
+2024-05-07 22:27:45,028, Logistic Regression, Replication: 8, Accuracy: 0.9790, F1: 0.9792, ROC AUC: 0.9980, Precision: 0.9930, Params: {'C': 10, 'max_iter': 10000}
+2024-05-07 22:27:45,496, SVM, Replication: 8, Accuracy: 0.9720, F1: 0.9712, ROC AUC: 0.5000, Precision: 0.9854, Params: {'C': 10, 'gamma': 'scale'}
+2024-05-07 22:27:45,557, Logistic Regression, Replication: 9, Accuracy: 0.9790, F1: 0.9793, ROC AUC: 0.9935, Precision: 0.9793, Params: {'C': 10, 'max_iter': 10000}
+2024-05-07 22:27:45,970, SVM, Replication: 9, Accuracy: 0.9650, F1: 0.9650, ROC AUC: 0.5000, Precision: 0.9857, Params: {'C': 10, 'gamma': 'scale'}

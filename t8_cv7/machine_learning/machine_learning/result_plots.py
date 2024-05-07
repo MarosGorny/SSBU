@@ -7,7 +7,7 @@ class Plotter:
     """A class for plotting the results of machine learning experiments."""
 
     
-    def __init__(self, save_directory='machine_learning'):
+    def __init__(self, save_directory='D:/School/Ing/2. Semester/SSBU/SSBULinda/SSBU/t8_cv7/machine_learning/machine_learning/outputs/MGOResults'):
         """
         Initialize the Plotter instance.
 
